@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Oranged!",
-  "description": "Oranged! is a Google Chrome extension that helps you be more organized and productive. It's a simple to-do list and Note pad within reach of a new tab.",
+  "name": "MeContaron",
+  "description": "MeContaron es una Extension de Twitter (X) en la que permite verificar si una noticia es respaldada por un medio de comunicacion oficial",
   "version": "0.0.1",
   "permissions": [
     "activeTab",
@@ -12,10 +12,8 @@
     "service_worker": "background.js",
     "type": "module"
   },
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  },
   "action": {
-    "default_icon": "favicon.ico"
+    "default_icon": "favicon.ico",
+    "default_popup": "index.html"
   }
 }
