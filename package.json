@@ -1,5 +1,5 @@
 {
-  "name": "oranged",
+  "name": "MeContaron",
   "version": "0.0.1",
   "description": "Oranged! is a Google Chrome extension that helps you be more organized and productive. It's a simple to-do list and Note pad within reach of a new tab.",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "@types/chrome": "^0.0.261",
     "@types/uuid": "^9.0.8",
     "base-64": "^1.0.0",
-    "firebase": "^10.12.4",
+    "firebase": "^10.12.5",
     "react": "^18.2.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
