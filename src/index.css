@@ -30,6 +30,7 @@ button{
 
 header{
     border-bottom: 1px solid var(--gris);
+    height: 3rem;
 }
 
 .logo{
@@ -48,6 +49,40 @@ header{
     font-family: "Kodchasan", sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.header-2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    border: none;
+}
+
+.header__izquierda{
+    display: flex;
+}
+
+.header__izquierda img{
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.header__usuario{
+    color: #9fa2a5;
+}
+
+.boton__cerrar{
+    background-color: transparent;
+    color: var(--blanco);
+    border: 1px solid #EE6352;
+    width: 8rem;
+    text-align: center;
+    border-radius: 20px;
+    height: 2rem;
+    cursor: pointer;
 }
 
 .login__titulo{

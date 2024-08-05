@@ -1,0 +1,26 @@
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.tab{
+    font-size: 1.2rem;
+    border: 1px solid var(--gris);
+    border-bottom: 2px solid var(--gris);
+    border-top: none;
+    width: 33.33%;
+    padding: 0.3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.active::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 60%;
+    left: 20%;
+    height: 3px;
+    background-color: var(--celeste);
+}

@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { signInGoogle } from "../../firebase/auth";
-import { useAuth } from "../../contexts/authContext";
+import Main from "../paginas/Main";
 
-const Login = () => {
-//   const { userLoggedIn } = useAuth();
-    const [userLoggedIn, setUserLoggedIn] = useState(false)
+const Login = ({userLoggedIn, setUserLoggedIn}) => {
+
 const [isSigningIn, setIsSigningIn] = useState(false);
 
   
 
-  const onGoogleSignIn = async (e) => {
+  const onGoogleSignIn = async () => {
       if (!isSigningIn) {
         setUserLoggedIn(true);
       setIsSigningIn(true);
       try {
-        await signInGoogle();
+        // await signInGoogle();
       } catch (err) {
         console.error("Google sign-in error:", err);
         setIsSigningIn(false);
@@ -24,17 +23,10 @@ const [isSigningIn, setIsSigningIn] = useState(false);
 
   return (
     <div>
-      <header className="header">
-        <div className="logo">
-          <img src="./assets/logo_con_borde.png" alt="Logo" className="logo" />
-          <h3 className="logo__titulo">MeContaron</h3>
-        </div>
-      </header>
-
       {userLoggedIn ? (
-        <div>
-          <h1>Welcome Home!</h1>
-        </div>
+        <>
+            <Main/>
+        </>
       ) : (
         <div className="login">
           <h3 className="login__titulo">Ingresa con tu cuenta</h3>
