@@ -1,0 +1,30 @@
+.logo{
+    width: 5rem;
+    height: auto;
+    position: absolute;
+    right: 42%;
+    top: 0;
+}
+
+*{
+    border: none;
+}
+
+.verdadero{
+    border: 2px solid green !important;
+    padding-top: 3rem !important;
+}
+
+.verdadero:hover, .verdadero:active{
+    border: 2px solid rgb(23, 153, 23) !important;
+}
+
+.falso{
+    border: 2px solid red !important;
+    padding-top: 3rem !important;
+
+}
+
+.falso:hover{
+    border: 2px solid rgb(166, 27, 27) !important;
+}

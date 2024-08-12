@@ -3,17 +3,18 @@
   "name": "MeContaron",
   "description": "MeContaron es una Extension de Twitter (X) en la que permite verificar si una noticia es respaldada por un medio de comunicacion oficial",
   "version": "0.0.1",
+  "proxy": "http://localhost:5000",
   "permissions": [
     "activeTab",
     "storage",
     "tabs"
   ],
   "background": {
-    "service_worker": "background.js",
+    "service_worker": "./background.js",
     "type": "module"
   },
   "action": {
-    "default_icon": "favicon.ico",
+    "default_icon": "favicon.ico",  
     "default_popup": "index.html"
   }
 
