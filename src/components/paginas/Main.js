@@ -22,9 +22,9 @@ const Main = () => {
             </div>
         </div>
         
-            {tab === "seguidos" && <Seguidos />}
-            {tab === "agregar" && <Agregar />}
-            {tab === "siguiendo" && <Tweet />}
+            {tab === "seguidos" && <Seguidos text="Esta es la pagina seguidos"/>}
+            {tab === "agregar" && <Agregar text="Esta es la pagina agregar"/>}
+            {tab === "tweet" && <Tweet text="Esta es la pagina tweet" />}
         </>
     )
 }

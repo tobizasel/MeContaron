@@ -1,9 +1,9 @@
 import React from "react";
 
-const Tweet = () => {
+const Tweet = ({text}) => {
     return (
         <div>
-            tweet
+            <h2>{text}</h2>
         </div>
     )
 }

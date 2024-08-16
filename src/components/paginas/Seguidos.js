@@ -1,9 +1,9 @@
 import React from "react";
 
-const Seguidos = () => {
+const Seguidos = ({text}) => {
     return (
         <>
-        seguidos
+        <h2>{text}</h2>
         </>
     )
 }

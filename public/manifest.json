@@ -16,7 +16,12 @@
   "action": {
     "default_icon": "favicon.ico",  
     "default_popup": "index.html"
-  }
+  },
+  "content_scripts": [{
+    "js": ["../src/content-scripts/agarrarTweets.js"],
+    "css": ["../src/contents-scripts/tweets.css"],
+    "matches": ["https://x.com/*"]
+  }]
 
 
 }

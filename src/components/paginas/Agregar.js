@@ -1,9 +1,9 @@
 import React from "react";
 
-const Agregar = () => {
+const Agregar = ({text}) => {
     return (
         <div>
-            hola
+    <h2>{text}</h2>
         </div>
     )
 }
